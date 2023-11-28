@@ -1,3 +1,4 @@
+import displays.DoctorDisplay;
 import patients.Patient;
 
 import java.time.LocalDate;
@@ -5,6 +6,7 @@ import java.net.URL;
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -24,8 +26,10 @@ public class Main {
         JPanel examinationDetails = new JPanel();
         JPanel patientDetails = new JPanel();
 
-        //labels for each patient
-        JLabel labelPat1 = new JLabel(pat1.getDisplay) //add display
+        //labels for each display
+        JLabel docDisplay = new JLabel(docDisplay.getDisplayText()) //add display
+        JLabel adminDisplay = new JLabel(adminDisplay.getDisplayText()) //add display
+
 
         frame.setContentPane(examinationDetails);
         frame.setContentPane(patientDetails);
